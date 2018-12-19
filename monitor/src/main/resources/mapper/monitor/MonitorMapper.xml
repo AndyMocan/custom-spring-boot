@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.originaltek.botgo.monitor.dao.mapper.MonitorMapper">
+
+
+    <insert id="addNewMonitorRecord" parameterType="com.originaltek.botgo.monitor.dao.bean.MonitorEntity">
+        <selectKey resultType="java.lang.Integer" order="AFTER" keyProperty="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into t_monitor (type, isSuccess, protocol, cron, dataNum, successDataNum, errorNum, tryCount, message, notes)
+        values (#{type,jdbcType=VARCHAR},
+        #{isSuccess,jdbcType=NUMERIC},
+        #{protocol,jdbcType=VARCHAR},
+        #{cron,jdbcType=VARCHAR},
+        #{dataNum,jdbcType=NUMERIC},
+        #{successDataNum,jdbcType=NUMERIC},
+        #{errorNum,jdbcType=NUMERIC},
+        #{tryCount,jdbcType=NUMERIC},
+        #{message,jdbcType=VARCHAR},
+        #{notes,jdbcType=VARCHAR}
+        )
+    </insert>
+
+
+    <update id="updateMonitorInfo" parameterType="com.originaltek.botgo.monitor.dao.bean.MonitorEntity">
+
+        UPDATE t_monitor
+         set type = #{type,jdbcType=VARCHAR},
+             isSuccess = #{isSuccess,jdbcType=VARCHAR},
+             protocol = #{protocol,jdbcType=VARCHAR},
+             cron = #{cron,jdbcType=VARCHAR},
+             dataNum = #{dataNum,jdbcType=NUMERIC},
+             successDataNum = #{successDataNum,jdbcType=NUMERIC},
+             errorNum = #{errorNum,jdbcType=NUMERIC},
+             tryCount = #{tryCount,jdbcType=NUMERIC},
+             message = #{message,jdbcType=VARCHAR},
+             notes = #{notes,jdbcType=VARCHAR}
+            WHERE `id` = #{id,jdbcType=NUMERIC}
+    </update>
+
+</mapper>
+

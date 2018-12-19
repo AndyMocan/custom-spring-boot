@@ -1,0 +1,119 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.originaltek.botgo.monitor.autoconfigure.MonitorProperties",
+      "name": "monitor",
+      "type": "com.originaltek.botgo.monitor.autoconfigure.MonitorProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.originaltek.botgo.monitor.autoconfigure.MonitorProperties",
+      "name": "monitor.driver-class",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.originaltek.botgo.monitor.autoconfigure.MonitorProperties",
+      "name": "monitor.enabled",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.originaltek.botgo.monitor.autoconfigure.MonitorProperties",
+      "name": "monitor.filters",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.originaltek.botgo.monitor.autoconfigure.MonitorProperties",
+      "defaultValue": 0,
+      "name": "monitor.initial-size",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.originaltek.botgo.monitor.autoconfigure.MonitorProperties",
+      "name": "monitor.jdbc-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.originaltek.botgo.monitor.autoconfigure.MonitorProperties",
+      "defaultValue": 8,
+      "name": "monitor.max-active",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.originaltek.botgo.monitor.autoconfigure.MonitorProperties",
+      "defaultValue": 8,
+      "name": "monitor.max-idle",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.originaltek.botgo.monitor.autoconfigure.MonitorProperties",
+      "defaultValue": 0,
+      "name": "monitor.max-open-prepared-statements",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.originaltek.botgo.monitor.autoconfigure.MonitorProperties",
+      "defaultValue": -1,
+      "name": "monitor.max-wait",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "com.originaltek.botgo.monitor.autoconfigure.MonitorProperties",
+      "defaultValue": 0,
+      "name": "monitor.min-evictable-idle-time-millis",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "com.originaltek.botgo.monitor.autoconfigure.MonitorProperties",
+      "defaultValue": 0,
+      "name": "monitor.min-idle",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.originaltek.botgo.monitor.autoconfigure.MonitorProperties",
+      "name": "monitor.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.originaltek.botgo.monitor.autoconfigure.MonitorProperties",
+      "defaultValue": false,
+      "name": "monitor.pool-prepared-statements",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.originaltek.botgo.monitor.autoconfigure.MonitorProperties",
+      "defaultValue": false,
+      "name": "monitor.test-on-borrow",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.originaltek.botgo.monitor.autoconfigure.MonitorProperties",
+      "defaultValue": false,
+      "name": "monitor.test-on-return",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.originaltek.botgo.monitor.autoconfigure.MonitorProperties",
+      "defaultValue": false,
+      "name": "monitor.test-while-idle",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.originaltek.botgo.monitor.autoconfigure.MonitorProperties",
+      "defaultValue": 0,
+      "name": "monitor.time-between-eviction-runs-millis",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "com.originaltek.botgo.monitor.autoconfigure.MonitorProperties",
+      "name": "monitor.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.originaltek.botgo.monitor.autoconfigure.MonitorProperties",
+      "name": "monitor.validation-query",
+      "type": "java.lang.String"
+    }
+  ]
+}
